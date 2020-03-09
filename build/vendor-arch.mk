@@ -44,7 +44,7 @@ ifeq ($(RDK_MACHINE),template_machine)
 RDK_OEM = template_oem
 RDK_MODEL = template_model
 
-KCONFIG_TARGET ?= platform/rdk/kconfig/RDK
+KCONFIG_TARGET ?= vendor/$(VENDOR)/kconfig/TEMPLATE
 
 # TODO: Specify additional CFLAGS if needed
 #RDK_CFLAGS  +=

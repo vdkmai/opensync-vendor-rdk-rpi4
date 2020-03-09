@@ -37,6 +37,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*
  * If a non-default implementation of osync_hal API is needed, then
  * it should be implemented here.
- * Otherwise, use the default implementation(s) by un-commenting
- * the macros in the osync_hal_config.h header file.
+ * Otherwise, use the default implementation(s) by selecting respective
+ * option(s) in Kconfig.
  */
