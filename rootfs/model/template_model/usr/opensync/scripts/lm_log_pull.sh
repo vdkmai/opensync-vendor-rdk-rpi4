@@ -119,7 +119,7 @@ tar -czf "$LM_UPLOAD_TOKEN" "$LM_PULL_NAME"
 
 # Upload tarball
 log "Uploading tarball to ${LM_UPLOAD_URL}"
-curl --cert /usr/plume/etc/certs/client.pem --key /usr/plume/etc/certs/client_dec.key -v -F filename=@${LM_UPLOAD_TOKEN} $LM_UPLOAD_URL || log "Upload failed!!"
+curl --cert /usr/opensync/etc/certs/client.pem --key /usr/opensync/etc/certs/client_dec.key -v -F filename=@${LM_UPLOAD_TOKEN} $LM_UPLOAD_URL || log "Upload failed!!"
 
 # Cleanup
 log "Cleaning up"
