@@ -47,7 +47,7 @@ RDK_MODEL = rpi4
 KCONFIG_TARGET ?= vendor/$(VENDOR)/kconfig/RDK
 
 # TODO: Specify additional CFLAGS if needed
-#RDK_CFLAGS  +=
+RDK_CFLAGS  += -Wno-absolute-value
 
 else
 $(error Unsupported RDK_MACHINE ($(RDK_MACHINE)).)
