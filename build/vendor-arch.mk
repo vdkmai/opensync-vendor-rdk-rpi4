@@ -25,7 +25,7 @@
 ifeq ($(TARGET),RDKB)
 
 # TODO: Set correct vendor name
-VENDOR = template
+VENDOR = rpi4
 
 BACKHAUL_SSID = "we.piranha"
 
@@ -38,13 +38,13 @@ VERSION_NO_SHA1 = 1
 VERSION_NO_PROFILE = 1
 
 # TODO: Set correct machine (it should equal to MACHINE variable from your Yocto build)
-ifeq ($(RDK_MACHINE),template_machine)
+ifeq ($(RDK_MACHINE),raspberrypi-rdk-broadband-rpi4)
 
 # TODO: Set correct OEM and model names
-RDK_OEM = template_oem
-RDK_MODEL = template_model
+RDK_OEM = rpi4
+RDK_MODEL = rpi4
 
-KCONFIG_TARGET ?= vendor/$(VENDOR)/kconfig/TEMPLATE
+KCONFIG_TARGET ?= vendor/$(VENDOR)/kconfig/RDK
 
 # TODO: Specify additional CFLAGS if needed
 #RDK_CFLAGS  +=

@@ -30,46 +30,46 @@
 case "$1" in
 
     -mo)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+        echo "Raspberry4"
         ;;
     -sn)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+        echo "1234567890"
         ;;
     -fw)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+        echo "rdk-yocto-raspberry4"
         ;;
     -cmac)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+	echo $(cat /sys/class/net/eth0/address)
         ;;
     -cip)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+	echo $(ip addr show brlan0 | grep 'inet ' | awk '{print $2}' | cut -f1 -d'/')
         ;;
     -cipv6)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+        echo ""
         ;;
     -emac)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+	echo $(cat /sys/class/net/erouter0/address)
         ;;
     -eip)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+	echo $(ip addr show erouter0 | grep 'inet ' | awk '{print $2}' | cut -f1 -d'/')
         ;;
     -eipv6)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+        echo ""
         ;;
     -lmac)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+	echo $(cat /sys/class/net/brlan0/address)
         ;;
     -lip)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+	echo $(ip addr show brlan0 | grep 'inet ' | awk '{print $2}' | cut -f1 -d'/')
         ;;
     -lipv6)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+        echo ""
         ;;
     -ms)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+	echo "Full"
         ;;
     -mu)
-        echo "option $1 is not implemented" ; exit 1  # TODO
+	echo "ssl:wildfire.plume.tech:443"
         ;;
 
     *)

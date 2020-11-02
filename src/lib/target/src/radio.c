@@ -29,7 +29,5 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 char* target_radio_get_chipset(const char *ifname)
 {
-    // TODO
-    LOGE("%s() is not implemented", __func__);
-    return "";
+    return "netgear-a6210";
 }

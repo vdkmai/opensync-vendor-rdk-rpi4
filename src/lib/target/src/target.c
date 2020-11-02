@@ -29,7 +29,5 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 const char* target_tls_privkey_filename(void)
 {
-    // TODO
-    LOGE("%s() is not implemented", __func__);
-    return "";
+    return "/usr/opensync/etc/certs/client_dec.key";
 }
